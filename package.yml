@@ -9,9 +9,9 @@ summary    : A stylish to-do list with built-in productivity timer.
 description: |
     Go For It! is a simple and stylish productivity app, featuring a to-do list, merged with a timer that keeps your focus on the current task.
 builddeps  :
-    - vala
     - pkgconfig(gtk+-3.0)
     - pkgconfig(libnotify)
+    - vala
 setup      : |
     %cmake .
 build      : |
