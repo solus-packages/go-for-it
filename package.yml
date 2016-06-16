@@ -1,10 +1,10 @@
 name       : go-for-it
 version    : 1.4.6
-release    : 1
+release    : 2
 source     :
     - https://github.com/mank319/Go-For-It/archive/release_1.4.6.tar.gz : cb4db45577ee6469d0160c94ccff04cb02bf64167db71a785aef35443b79ecf0
 license    : GPL-3.0
-component  : desktop.gnome
+component  : office
 summary    : A stylish to-do list with built-in productivity timer.
 description: |
     Go For It! is a simple and stylish productivity app, featuring a to-do list, merged with a timer that keeps your focus on the current task.
