@@ -1,0 +1,26 @@
+From c00c5829337a87eacee0e7f179fd60a2627beb6c Mon Sep 17 00:00:00 2001
+From: Peter O'Connor <peter@solus-project.com>
+Date: Mon, 13 Nov 2017 11:14:08 +1100
+Subject: [PATCH] Clean up the file name/paths
+
+Signed-off-by: Peter O'Connor <peter@solus-project.com>
+---
+ CMakeLists.txt      | 2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 0aabc8c..3254f91 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -8,7 +8,7 @@ include (GNUInstallDirs)
+ set (INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
+ set (DATADIR "${INSTALL_PREFIX}/share")
+ 
+-set (APP_ID "com.github.jmoerman.go-for-it")
++set (APP_ID "go-for-it")
+ set (APP_SYSTEM_NAME ${APP_ID} CACHE STRING "Name to used for file names. For example the file name of the .desktop file.")
+ 
+ set (PKGDATADIR ${DATADIR}/${APP_SYSTEM_NAME})
+-- 
+2.15.0
+

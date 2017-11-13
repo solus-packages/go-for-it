@@ -1,8 +1,8 @@
 name       : go-for-it
-version    : 1.5
-release    : 3
+version    : 1.6.3
+release    : 4
 source     :
-    - https://github.com/mank319/Go-For-It/archive/release_v1.5.tar.gz : 5acba45690c999f3333eb615a0217e93b53a2f9f3e36f05c006067fdb134a1f1
+    - https://github.com/JMoerman/Go-For-It/archive/1.6.3.tar.gz : 8299f2d6d5bfb13b7696b387d52a033101b4f2c303eab768c5c4f8daabb18b67
 license    : GPL-3.0
 component  : office
 summary    : A stylish to-do list with built-in productivity timer.
@@ -13,7 +13,8 @@ builddeps  :
     - pkgconfig(libnotify)
     - vala
 setup      : |
-    %cmake .
+    %patch -p1 < $pkgfiles/0001-Clean-up-the-file-name-paths.patch
+    %cmake -DBUILD_TESTS=ON .
 build      : |
     %make
 install    : |
