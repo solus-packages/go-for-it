@@ -1,8 +1,8 @@
 name       : go-for-it
-version    : 1.6.3
-release    : 4
+version    : 1.6.9
+release    : 5
 source     :
-    - https://github.com/JMoerman/Go-For-It/archive/1.6.3.tar.gz : 8299f2d6d5bfb13b7696b387d52a033101b4f2c303eab768c5c4f8daabb18b67
+    - https://github.com/JMoerman/Go-For-It/archive/1.6.9.tar.gz : 5f1ddba9261d33ee05162985448f72dd361401d8d0dbbefc31c222db249f0a66
 license    : GPL-3.0
 component  : office
 summary    : A stylish to-do list with built-in productivity timer.
