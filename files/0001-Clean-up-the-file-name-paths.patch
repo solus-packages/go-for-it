@@ -1,26 +1,26 @@
-From c00c5829337a87eacee0e7f179fd60a2627beb6c Mon Sep 17 00:00:00 2001
-From: Peter O'Connor <peter@solus-project.com>
-Date: Mon, 13 Nov 2017 11:14:08 +1100
+From 7526f9872ae1e77ac902077a6558bb9276b8473a Mon Sep 17 00:00:00 2001
+From: Pierre-Yves <pyu@riseup.net>
+Date: Sat, 4 May 2019 22:17:06 +0200
 Subject: [PATCH] Clean up the file name/paths
 
-Signed-off-by: Peter O'Connor <peter@solus-project.com>
+Signed-off-by: Pierre-Yves <pyu@riseup.net>
 ---
- CMakeLists.txt      | 2 +-
- 1 files changed, 1 insertions(+), 1 deletions(-)
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 0aabc8c..3254f91 100644
+index 5bc78c9..0f56db0 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -8,7 +8,7 @@ include (GNUInstallDirs)
  set (INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
  set (DATADIR "${INSTALL_PREFIX}/share")
  
--set (APP_ID "com.github.jmoerman.go-for-it")
-+set (APP_ID "go-for-it")
+-set (APP_ID "com.github.jmoerman.go-for-it" CACHE STRING "The application id")
++set (APP_ID "go-for-it" CACHE STRING "The application id")
  set (APP_SYSTEM_NAME ${APP_ID} CACHE STRING "Name to used for file names. For example the file name of the .desktop file.")
  
  set (PKGDATADIR ${DATADIR}/${APP_SYSTEM_NAME})
 -- 
-2.15.0
+2.21.0
 

@@ -2,15 +2,15 @@
     <Source>
         <Name>go-for-it</Name>
         <Packager>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@getsol.us</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-3.0-only</License>
         <PartOf>office</PartOf>
         <Summary xml:lang="en">A stylish to-do list with built-in productivity timer.</Summary>
         <Description xml:lang="en">Go For It! is a simple and stylish productivity app, featuring a to-do list, merged with a timer that keeps your focus on the current task.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>go-for-it</Name>
@@ -21,16 +21,19 @@
         <Files>
             <Path fileType="executable">/usr/bin/go-for-it</Path>
             <Path fileType="data">/usr/share/applications/go-for-it.desktop</Path>
-            <Path fileType="data">/usr/share/go-for-it/style/colors-dark.css</Path>
-            <Path fileType="data">/usr/share/go-for-it/style/colors.css</Path>
-            <Path fileType="data">/usr/share/go-for-it/style/go-for-it-3.10-dark.css</Path>
-            <Path fileType="data">/usr/share/go-for-it/style/go-for-it-3.10.css</Path>
-            <Path fileType="data">/usr/share/go-for-it/style/go-for-it-3.20-dark.css</Path>
-            <Path fileType="data">/usr/share/go-for-it/style/go-for-it-3.20.css</Path>
+            <Path fileType="data">/usr/share/go-for-it/style/palettes/elementary-dark.css</Path>
+            <Path fileType="data">/usr/share/go-for-it/style/palettes/elementary.css</Path>
+            <Path fileType="data">/usr/share/go-for-it/style/palettes/theme-based.css</Path>
             <Path fileType="data">/usr/share/go-for-it/style/widgets-3.10.css</Path>
             <Path fileType="data">/usr/share/go-for-it/style/widgets-3.20.css</Path>
+            <Path fileType="data">/usr/share/go-for-it/style/widgets-minimal-3.10.css</Path>
+            <Path fileType="data">/usr/share/go-for-it/style/widgets-minimal-3.20.css</Path>
             <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/go-for-it.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/actions/go-for-it-go-to-done.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/actions/go-for-it-go-to-list-symbolic.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/go-for-it.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/actions/go-for-it-go-to-done.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/actions/go-for-it-go-to-list-symbolic.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/24x24/actions/go-for-it-open-menu-fallback.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/go-for-it.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/go-for-it.svg</Path>
@@ -89,7 +92,6 @@
             <Path fileType="localedata">/usr/share/locale/fo/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/fr/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/fr_CA/LC_MESSAGES/go-for-it.mo</Path>
-            <Path fileType="localedata">/usr/share/locale/fr_FR/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/fy/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/ga/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/gd/LC_MESSAGES/go-for-it.mo</Path>
@@ -154,7 +156,6 @@
             <Path fileType="localedata">/usr/share/locale/mt/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/my/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/na/LC_MESSAGES/go-for-it.mo</Path>
-            <Path fileType="localedata">/usr/share/locale/nb/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/nd/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/ne/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/ng/LC_MESSAGES/go-for-it.mo</Path>
@@ -229,7 +230,6 @@
             <Path fileType="localedata">/usr/share/locale/yo/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/za/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/zh/LC_MESSAGES/go-for-it.mo</Path>
-            <Path fileType="localedata">/usr/share/locale/zh_CN/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/zh_HK/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/zh_TW/LC_MESSAGES/go-for-it.mo</Path>
             <Path fileType="localedata">/usr/share/locale/zu/LC_MESSAGES/go-for-it.mo</Path>
@@ -237,12 +237,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2018-12-25</Date>
-            <Version>1.6.9</Version>
+        <Update release="6">
+            <Date>2019-05-04</Date>
+            <Version>1.7.2</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@getsol.us</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>
